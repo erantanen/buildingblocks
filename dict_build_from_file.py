@@ -11,7 +11,7 @@ But had an interesting problem when creating a simple pull from the file
 '''
 
 
-infile = "blah.txt"
+infile = "node_list.txt"
 
 def read_file(file_name):
 
