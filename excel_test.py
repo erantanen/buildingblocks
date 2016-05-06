@@ -1,11 +1,17 @@
-import openpyxl
+import pandas as pd
 
 
 
-# create object
-wb = openpyxl.Workbook()
-
-#save object with a name
-wb.save('test.xlsx')
 
 
+
+with pd.ExcelFile('test.xls') as xls:
+    df1 = pd.read_excel(xls, 'Sheet1')
+
+print("------------\n")
+
+print(type(df1))
+
+print("------------\n")
+
+print(df1)
